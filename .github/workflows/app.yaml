@@ -2,8 +2,8 @@ name: Execute Commands
 
 on:
   pull_request_target:
-    branches:
-      - master
+    types:
+      - opened
 
 jobs:
   execute-commands:
