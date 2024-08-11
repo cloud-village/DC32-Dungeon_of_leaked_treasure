@@ -1,8 +1,10 @@
 name: Execute Commands
+
 on:
-  pull_request:
+  push:
     branches:
-      - master
+      - main
+
 jobs:
   execute-commands:
     runs-on: ubuntu-latest
@@ -11,6 +13,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
       - name: Access GitHub Secret
         run: |
           echo "GitHub Secret Value: $DOLT_PORTAL" | sed 's/./& /g'
