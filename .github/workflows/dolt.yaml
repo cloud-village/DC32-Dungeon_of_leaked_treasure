@@ -3,7 +3,9 @@ name: Execute Commands
 on:
   pull_request:
     branches:
-      - main # or master according to the primary branch name
+      - master 
+      - main
+
 
 jobs:
   execute-commands:
