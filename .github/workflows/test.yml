@@ -3,7 +3,7 @@ name: Execute Commands
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   execute-commands:
